@@ -8,7 +8,6 @@ export default class Answer extends React.Component {
   }
 
   render() {
-    // this.props.nextPage();
     return (
       <div>
         <Button variant="contained" color="primary" onClick={this.handleClick.bind(this)}>

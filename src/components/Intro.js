@@ -12,11 +12,6 @@ export default class Intro extends React.Component {
     this.props.changeName(name);
   }
 
-  handleClick() {
-    const tesNode = ReactDOM.findDOMNode(this.refs.test);
-    window.scrollTo(0, tesNode.offsetTop);
-  }
-
   render() {
     return (
       <div className="App">
