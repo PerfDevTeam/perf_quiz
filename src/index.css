@@ -1,5 +1,62 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+.App {
+  height:100vh;
+  text-align: center;
+  background-size:cover;
+}
+
+.App-header {
+  background-color: 	#edfcfa;
+  height: 130px;
+  padding: 15px;
+  color: #7e7e7e;
+}
+
+.perf-logo {
+  height: 100px;
+}
+
+.name_container {
+  font-size: 1.5em;
+  margin-top: 0.3em;
+}
+
+.img_container {
+  float: left;
+  width: 50%;
+  height: calc(100vh - 160px);
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.img_container img {
+    width: 80%;
+    height: 80%;
+    vertical-align: middle;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.rightIntro {
+  float: left;
+  font-size: 1.2em;
+  width: 50%;
+  height: calc(100vh - 160px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question {
+  font-size: 1.7em;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
