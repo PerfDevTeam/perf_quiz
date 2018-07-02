@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button';
 import { animateScroll as scroll } from 'react-scroll'
 
 
+
 export default class Intro extends React.Component {
   handleChange(e) {
     const name = e.target.value;
@@ -24,7 +25,7 @@ export default class Intro extends React.Component {
             <h1>Create your own fragrance</h1><br></br>
             <h2>What is your name?</h2>
             <input placeholder="Enter your name" onChange={this.handleChange.bind(this)} />
-            <Button variant="outlined" size="small" onClick={() => scroll.scrollToBottom()}>
+            <Button variant="outlined" size="small" onClick={() => scroll.scrollToBottom()} color="inherit">
               ok
             </Button>
           </div>

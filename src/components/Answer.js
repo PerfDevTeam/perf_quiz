@@ -1,18 +1,26 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
+import AnsBut from './AnsBut';
 
 export default class Answer extends React.Component {
 
-  handleClick() {
+  onClick(i) {
     this.props.nextPage(this.props.pageNum);
+    console.log(i)
+  }
+
+  createBut = () => {
+    let table = []
+
+    for (let i = 0; i < 4; i++) {
+      table.push(<AnsBut handleClick2={this.onClick.bind(this, i)} pageNum={this.props.pageNum} key={i} optNum={i}/>)
+    }
+    return table
   }
 
   render() {
-    return (
-      <div>
-        <Button variant="contained" color="primary" onClick={this.handleClick.bind(this)}>
-          photo + option
-        </Button>
+    return(
+      <div className="answers">
+        {this.createBut()}
       </div>
     );
   }
